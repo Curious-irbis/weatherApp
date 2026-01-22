@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>Digital atmosphere</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <img src="../img/Sunrise.png" alt="" id="styleChange">  
+            <span>dailyWeather</span>
+        </div>
+        <nav>
+            <div class="city__search_div">
+                <img src="../img/loupe.png" alt="" id="search__loupe">
+                <input type="text" id="city__search" class="city__search" placeholder="Введите город">
+            </div>
+            <span id="nav__city" class="nav__city">Москва</span>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="weatherStatus">
+            <div class="weatherStatus__inner" id="weatherStatus__status">
+                <p>Состояние погоды</p>
+            </div>
+            <div class="weatherStatus__inner" id="weatherStatus__tmp">
+                <p>Температура</p>
+            </div>
+        </div>
+        <div class="clothesRecomendations">
+            <div class="clothesRecomendations__txt">
+                <p id="clothesRecomendations__p">
+                    Здесь будут рекомендации
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>
