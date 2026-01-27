@@ -99,7 +99,8 @@ body main .weatherStatus {
 body main .weatherStatus .weatherStatus__inner {
   background-color: #D9D9D9;
   width: 270px;
-  height: 40px;
+  height: -moz-max-content;
+  height: max-content;
   border-radius: 10px;
   display: inline-flex;
   align-items: center;
