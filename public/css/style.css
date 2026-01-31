@@ -127,7 +127,7 @@ body main .clothesRecomendations .clothesRecomendations__txt p {
   font-size: 28px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 150px) {
   body header {
     padding: 10px 30px;
     flex-direction: column;
