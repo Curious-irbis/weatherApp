@@ -8,7 +8,7 @@ searchBar.addEventListener("blur", ev => {
     async function getData(){
         try {
             const response = await fetch(`/api/weather?city=${city}`)
-
+        
             if(!response.ok){
                 const navCity = document.getElementById('nav__city')
                 const htmlStatusWeather = document.getElementById('weatherStatus__status')
@@ -20,7 +20,7 @@ searchBar.addEventListener("blur", ev => {
                 htmlTempWeather.innerText = 'Температура'
                 recomendations.innerText = 'Здесь будут рекомендации'
 
-                throw new Error('Ошибка HTTP: ', response.status)
+                throw new Error(`Ошибка HTTP: ${response.status}`)
             }
 
             const data = response.json()

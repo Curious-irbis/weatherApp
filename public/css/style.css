@@ -125,4 +125,83 @@ body main .clothesRecomendations .clothesRecomendations__txt p {
   max-width: 412px;
   word-break: normal;
   font-size: 28px;
+}
+
+@media (max-width: 400px) {
+  body header {
+    padding: 10px 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body header .header__logo {
+    gap: 10px;
+  }
+  body header .header__logo img {
+    width: 70px;
+  }
+  body header .header__logo span {
+    font-size: 22px;
+  }
+  body header nav {
+    flex-direction: column;
+    gap: 25px;
+  }
+  body header nav .city__search_div {
+    gap: 5px;
+    padding: 14px;
+    margin-inline: 10%;
+  }
+  body header nav .city__search_div img {
+    width: 30px;
+    height: 30px;
+  }
+  body header nav .city__search_div .city__search {
+    font-size: 18px;
+    font-family: "Comic Relief";
+  }
+  body header nav .city__search_div ::-moz-placeholder {
+    font-size: 18px;
+    font-family: "Comic Relief";
+  }
+  body header nav .city__search_div ::placeholder {
+    font-size: 18px;
+    font-family: "Comic Relief";
+  }
+  body main {
+    flex-flow: column;
+    padding: 0;
+  }
+  body main .weatherStatus {
+    border: none;
+    flex-flow: row;
+    width: 270px;
+    margin-inline: 20px;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+  body main .weatherStatus .weatherStatus__inner {
+    width: 120px;
+    height: 145px;
+    background-color: #A8364B;
+    color: white;
+    padding: 13px 12px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body main .weatherStatus .weatherStatus__inner p {
+    font-size: 20px;
+    padding: 0;
+  }
+  body main .clothesRecomendations {
+    width: 310px;
+    margin-inline: 30px;
+    background-color: #A8364B;
+    color: white;
+    border: 3px solid #ED6D7E;
+  }
+  body main .clothesRecomendations .clothesRecomendations__txt {
+    padding: 23px 17px;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
