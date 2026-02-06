@@ -1,8 +1,6 @@
 const searchBar = document.getElementById('city__search')
 
-searchBar.addEventListener("blur", ev => {
-    // работает
-
+function eventTrigger(ev){
     const city = ev.target.value
 
     async function getData(){
@@ -47,7 +45,7 @@ searchBar.addEventListener("blur", ev => {
 
             navCity.innerText = weatherData.name
             htmlStatusWeather.innerText = status
-            htmlTempWeather.innerText = weatherData.main.temp
+            htmlTempWeather.innerText = Math.round(weatherData.main.temp)
 
             const tempRecomend = document.createElement('p')
             const statusRecomend = document.createElement('p')
@@ -87,4 +85,9 @@ searchBar.addEventListener("blur", ev => {
     }
 
     main()
+}
+
+searchBar.addEventListener("blur", ev => eventTrigger(ev))
+searchBar.addEventListener("keypress", ev => {
+    if(ev.key == 'Enter') eventTrigger(ev)
 })
